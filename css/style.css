@@ -1,4 +1,13 @@
 /* Default classes */
+.bg-blue {
+    background-color: #6370b6;
+}
+.bg-light-blue {
+    background-color: #64b5f6;
+}
+.bg-dirty-blue {
+    background-color: #4f71ce;
+}
 .bg-dark-blue {
     background-color: #263238;
 }
@@ -13,6 +22,9 @@
 }
 .bg-white {
     background-color: #fff;
+}
+.bg-grey {
+    background-color: #455a64;
 }
 .border-grey {
     border: 1px solid #dedede;
@@ -242,11 +254,12 @@
 .dropdown-menu {
     position: absolute;
     display: none;
-    max-width: 350px;
     background-color: #fff;
     z-index: 99;
     border: 1px solid #d3d3d3;
-    min-width: 300px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     right: 0;
     -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
        -moz-box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
@@ -300,9 +313,7 @@
     margin-left: 6px;
 }
 .dropdown-menu .default-chevron-list {
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-bottom: 30px;
+    padding: 25px 20px 30px 20px;
 }
 .dropdown-menu .default-chevron-list li:hover{
     cursor: pointer;
@@ -454,6 +465,53 @@
     margin-bottom: 30px;
 }
 /* all-items end*/
+/* product banner */
+.product-banner {
+    border: 1px solid #dfdfdf;
+}
+.product-banner img {
+    padding: 20px 15px 20px 20px;
+}
+.product-description h5 {
+    font-family: 'robotomedium',sans-serif;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    color: #263238;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.product-description p {
+    font-family: 'robotoregular',sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #707070;
+}
+.product-info-wrap .d-flex {
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+.product-btn {
+    font-family: 'robotomedium',sans-serif;
+    font-size: 1rem;
+    line-height: 3.75rem;
+    color: #f4f6f5;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.product-btn + .product-btn {
+    margin-left: 20px;
+}
+.product-social {
+    font-size: 1.125rem;
+}
+.product-social a {
+    display: inline-block;
+    width: 50px;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+/* product banner end */
 /* product tabs */
 .tab-pane {
     display: none;
@@ -497,3 +555,4 @@
     height: 3px;
     background-color: #8bc34a;
 }
+/* product tabs end*/
