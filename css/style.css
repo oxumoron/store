@@ -486,7 +486,7 @@
     line-height: 1.5rem;
     color: #707070;
 }
-.product-info-wrap .d-flex {
+.product-panel {
     padding-top: 50px;
     padding-bottom: 55px;
 }
@@ -513,11 +513,28 @@
 }
 /* product banner end */
 /* product tabs */
+.product-tabs .nav {
+    padding-bottom: 35px;
+}
+.tab-content {
+    padding-left: 30px;
+}
 .tab-pane {
     display: none;
 }
 .tab-pane.show {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 60px;
+}
+.tab-pane ul + ul {
+    margin-left: 40px;
+}
+.tab-pane .default-chevron-list li + li {
+    margin-top: 20px;
 }
 .nav-item {
     -webkit-box-flex: 1;
@@ -530,6 +547,9 @@
     border-left: 1px solid #dfdfdf;
 }
 .nav-link {
+    font-family: 'robotomedium',sans-serif;
+    font-size: 1rem;
+    color: #70838d;
     padding: 20px 10px;
     text-align: center;
     display: block;
@@ -549,10 +569,64 @@
     transition: all .2s ease-in;
 }
 .nav-link.active {
-    font-weight: bold;
+    color: #263238;
 }
 .nav-link.active::after {
     height: 3px;
     background-color: #8bc34a;
 }
 /* product tabs end*/
+/* more product */
+.product-info-wrap {
+    margin-bottom: 120px;
+}
+.product-info-wrap h6.border-grey {
+    font-family: 'robotomedium',sans-serif;
+    font-size: 1.125rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.more-product {
+    padding-top: 25px;
+}
+.more-product .row + .row {
+    margin-top: 30px;
+}
+.more-product-card {
+    padding: 0;
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+.more-product-card:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+}
+.more-product-discription {
+    padding-left: 20px;
+}
+.more-product-discription h5 {
+    font-family: 'robotomedium',sans-serif;
+    font-size: 0.875rem;
+    color: #263238;
+}
+.more-product-discription h6 {
+    font-family: 'robotoregular',sans-serif;
+    font-size: 0.67rem;
+    color: #8bc34a;
+    margin-top: 10px; 
+}
+.more-product-discription h4 {
+    font-family: 'robotobold',sans-serif;
+    font-size: 1.125rem;
+    color: #263238;
+    margin-top: 10px;
+}
+/* more product end */
